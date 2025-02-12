@@ -59,17 +59,17 @@
     let buttonWidth = 80;
     let fontSize = 20; // Starting font size in pixels
     const imagePaths = [
-      "images/image1.gif",
-      "images/image2.gif",
-      "images/image3.gif",
-      "images/image4.gif",
-      "images/image5.gif",
-      "images/image6.gif",
-      "images/image7.gif"
+      "รูป/image1.gif",
+      "รูป/image2.jpg",
+      "รูป/image3.jpg",
+      "รูป/image4.jpg",
+      "รูป/image5.jpg",
+      "รูป/image6.jpg",
+      "รูป/image7.jpg"
     ];
   
     noButton.addEventListener('click', function() {
-      if (noClickCount < 6) {
+      if (noClickCount < 5) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
         buttonHeight += 35; // Increase height by 5px on each click
@@ -78,8 +78,8 @@
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 7) {
-          noButton.textContent = ["No", "แน่ใจน้าา?", "เทออ่าาา", "อย่าแกล้งเค้าา!!!", "เค้าโกดแล้วน้ะ!", "เชอะะะ", "กดYesเลยนะะ!"][noClickCount];
+        if (noClickCount < 6) {
+          noButton.textContent = ["No", "ไม่จิงอ่ออ", "เทอออ", "อย่าแกล้งเค้าน้ะ!", "โกดเล่าา", "ไม่ให้กดปุ่มนี้ละ งอนน"][noClickCount];
         }
       }
     });
