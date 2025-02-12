@@ -69,7 +69,7 @@
     ];
   
     noButton.addEventListener('click', function() {
-      if (noClickCount < 8) {
+      if (noClickCount < 6) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
         buttonHeight += 35; // Increase height by 5px on each click
@@ -78,8 +78,8 @@
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 9) {
-          noButton.textContent = ["No", "แน่ใจน้าา?", "เทออ่าาา", "อย่าแกล้งเค้าา!!!", "แงงงงง ไอ้อ้วนนน", "เค้าโกดแล้วน้ะ!", "เชอะะะ", "เค้ารักแกน้าา แกไม่รักเราหรอออ", "กดYesเลยนะะ!"][noClickCount];
+        if (noClickCount < 7) {
+          noButton.textContent = ["No", "แน่ใจน้าา?", "เทออ่าาา", "อย่าแกล้งเค้าา!!!", "เค้าโกดแล้วน้ะ!", "เชอะะะ", "กดYesเลยนะะ!"][noClickCount];
         }
       }
     });
